@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="assets/img/logo.svg">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <script type="text/javascript" src="assets/js/budget-calculator.js" defer></script>
+        <script type="text/javascript" src="assets/js/social-proof.js" defer></script>
+        <title>Lúdix - A melhor do universo lúdico</title>
+    </head>
+    <body>
+        <div id="hero">
+            <img id="hero-background" src="assets/img/hero-background.svg" alt="wave">
+
+            <header>
+                <a class="logo" href="index.html">
+                    <img src="assets/img/logo.svg" alt="Logo" />
+                    <h1>Lúdix</h1>
+                </a>
+
+                <nav>
+                    <a class="nav-label" href="index.html#about">Sobre</a>
+                    <a class="nav-label" href="index.html#budget">Orçamento</a>
+
+                    <a id="nav-cta" href="mailto:contecommateus@gmail.com" target="_top">Fale conosco</a>
+                </nav>
+            </header>
+
+            <div id="hero-content">
+                <div id="hero-left">
+                    <div id="hero-left-text">
+                        <h1>A melhor do universo lúdico!</h1>
+                        <p>Com 20 anos de mercado, Lúdix é a escolha certa para o seu jogo! Conte com os melhores materiais, designers especialistas e experiência de uma marca sólida e com paixão por jogos.</p>
+                    </div>
+                    <div id="hero-left-buttons">
+                        <a id="hero-contact" class="hero-cta" href="mailto:contecommateus@gmail.com" target="_top">Fale conosco!</a>
+                        <a id="hero-budget" class="hero-cta" href="index.html#budget">Orçamento</a>
+                    </div>
+                </div>
+
+                <img id="hero-image" src="assets/img/illustrations/hero.svg" alt="games" />
+            </div>
+        </div>
+
+        <div id="social-proof">
+            <h1>Pergunte à quem sabe</h1>
+
+            <div id="enterprise-carousel">
+                <div id="carousel-arrow-left" class="carousel-arrow" onclick="moveCarousel(-1)"><img src="assets/img/icons/arrow.svg" alt="left" /></div>
+
+                <div id="enterprise-list">
+                    <div id="enterprise-list-scroller">
+                        <div class="enterprise">
+                            <img src="assets/img/social_proof/manual-do-jooj.png" alt="Manual do Jooj" />
+                            <h2>Manual do Jooj</h2>
+                        </div>
+                        <div class="enterprise-list-separator"></div>
+
+                        <div class="enterprise">
+                            <img src="assets/img/social_proof/tumba-laca.png" alt="Tumba Laca" />
+                            <h2>Tumba Laca</h2>
+                        </div>
+                        <div class="enterprise-list-separator"></div>
+
+                        <div class="enterprise">
+                            <img src="assets/img/social_proof/galeritos.png" alt="Galeritos" />
+                            <h2>Galeritos</h2>
+                        </div>
+                        <div class="enterprise-list-separator"></div>
+
+                        <div class="enterprise">
+                            <img src="assets/img/social_proof/mundo-azul.png" alt="Mundo Azul" />
+                            <h2>Mundo Azul</h2>
+                        </div>
+                        <div class="enterprise-list-separator"></div>
+
+                        <div class="enterprise">
+                            <img src="assets/img/social_proof/brilhanti.png" alt="Brilhanti" />
+                            <h2>Brilhanti</h2>
+                        </div>
+                        <div class="enterprise-list-separator"></div>
+
+                        <div class="enterprise">
+                            <img src="assets/img/social_proof/ludo-ninja.png" alt="LudoNinja" />
+                            <h2>LudoNinja</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="carousel-arrow-right" class="carousel-arrow" onclick="moveCarousel(1)"><img src="assets/img/icons/arrow.svg" alt="right" /></div>
+            </div>
+
+            <hr />
+        </div>
+
+        <main>
+            <div id="description">
+                <div class="about-title">
+                    <img src="assets/img/icons/us.svg" alt="Sobre nós" />
+                    <h1>Esta é a Lúdix</h1>
+                </div>
+
+                <div id="description-cards">
+                    <div id="description-illustration">
+                        <div id="description-illustration-title">
+                            <h1>Seu próprio</h1>
+                            <h1 class="feature">jogo</h1>
+                            <h1>!</h1>
+                        </div>
+
+                        <img src="assets/img/illustrations/your-game.svg" alt="Seu jogo!" />
+                    </div>
+
+                    <div id="description-texts">
+                        <div class="description-texts-card">
+                            <h1>Transparente</h1>
+                            <p>Cada passo do nosso time visa agradar o cliente e o consumidor. Para isso, trabalhamos de forma transparente, sempre realizando testes no mundo real.</p>
+                        </div>
+                        <div class="description-texts-card">
+                            <h1>Ecológica</h1>
+                            <p>Somos uma empresa focada em produção sustentável. Produzimos o melhor para você e para o meio ambiente!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="effect-phrase">
+                <div class="about-title">
+                    <img src="assets/img/icons/cards.svg" alt="Sobre nós" />
+                    <h1>Você dá as cartas</h1>
+                </div>
+
+                <div id="effect-phrase-deck">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="flip-card-icon" src="assets/img/icons/materials.svg" alt="Materiais" />
+                                <p class="flip-card-title">Materiais</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img class="flip-card-icon" src="assets/img/icons/materials.svg" alt="Materiais" />
+                                <p class="flip-card-title">Materiais</p>
+                                <p class="flip-card-description">Defina com que tipo de material seu jogo deve trabalhar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="flip-card-icon" src="assets/img/icons/rules.svg" alt="Regras" />
+                                <p class="flip-card-title">Regras</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img class="flip-card-icon" src="assets/img/icons/rules.svg" alt="Regras" />
+                                <p class="flip-card-title">Regras</p>
+                                <p class="flip-card-description">Tenha a opinião final sobre as regras do jogo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img class="flip-card-icon" src="assets/img/icons/style.svg" alt="Estilo" />
+                                <p class="flip-card-title">Estilo</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img class="flip-card-icon" src="assets/img/icons/style.svg" alt="Estilo" />
+                                <p class="flip-card-title">Estilo</p>
+                                <p class="flip-card-description">Tenha total participação nas escolhas de design!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div id="budget">
+            <form id="budget-form" onsubmit="return calculateBudget()">
+                <h1>Monte o seu orçamento!</h1>
+
+                <div class="input-group">
+                    <div class="input-label">
+                        <label for="game-type">Tipo de jogo</label>
+                        <select id="game-type" class="input-content">
+                            <option value="board_game">Jogo de tabuleiro</option>
+                            <option value="card_game">Jogo de cartas</option>
+                            <option value="mix">Jogo com aplicativo</option>
+                        </select>
+                    </div>
+
+                    <div class="input-label">
+                        <label for="material-type">Material</label>
+                        <select id="material-type" class="input-content">
+                            <option value="paper">Papel</option>
+                            <option value="plastic">Plástico</option>
+                            <option value="wood">Madeira</option>
+                            <option value="glass">Vidro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-label">
+                    <label for="copies">Número de cópias</label>
+                    <input id="copies" class="input-content" type="number" min="0" placeholder="Quer fabricar quantos?" />
+                </div>
+
+                <div class="input-group">
+                    <div class="check-label">
+                        <input id="include-design" type="checkbox" />
+                        <label for="include-design">Incluir design</label>
+                    </div>
+
+                    <div class="check-label">
+                        <input id="include-art" type="checkbox" />
+                        <label for="include-art">Incluir arte</label>
+                    </div>
+
+                    <div class="check-label">
+                        <input id="include-publish" type="checkbox" />
+                        <label for="include-publish">Incluir publicação</label>
+                    </div>
+                </div>
+
+                <button id="calculate-budget">Veja agora!</button>
+            </form>
+
+            <div id="estimation">
+                <div id="estimation-illustration">
+                    <img src="assets/img/illustrations/budget.svg" alt="Orçamento" />
+                </div>
+                
+                <h2 id="estimation-value">R$ 000,00</h2>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer-ludix">
+                <a class="logo" href="index.html">
+                    <img src="assets/img/logo.svg" alt="Logo" />
+                    <h1>Lúdix</h1>
+                </a>
+
+                <p>Coloque sua ideia no papel!</p>
+
+                <div id="footer-socials">
+                    <a class="social-link" href="https://www.fiverr.com/tomateus" target="_blank">
+                        <img src="assets/img/contact/facebook.svg" alt="Facebook" />
+                    </a>
+
+                    <a class="social-link" href="https://www.fiverr.com/tomateus" target="_blank">
+                        <img src="assets/img/contact/instagram.svg" alt="Instagram" />
+                    </a>
+
+                    <a class="social-link" href="https://www.fiverr.com/tomateus" target="_blank">
+                        <img src="assets/img/contact/twitter.svg" alt="Twitter" />
+                    </a>
+
+                    <a class="social-link" href="mailto:contecommateus@gmail.com" target="_blank">
+                        <img src="assets/img/contact/mail.svg" alt="E-mail" />
+                    </a>
+                </div>
+            </div>
+
+            <p id="footer-copyright">Copyright © Lúdix 2023</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+#social-proof
+{
+    text-align: center;
+
+    padding: 1em var(--margin);
+}
+
+#social-proof h1
+{
+    font: var(--h1);
+
+    color: var(--black);
+}
+
+#enterprise-carousel
+{
+    gap: 2em;
+    display: flex;
+    margin: 2em 0;
+}
+
+.carousel-arrow
+{
+    cursor: pointer;
+    min-width: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+
+    border-radius: 100%;
+    background-color: var(--main);
+}
+
+.carousel-arrow img
+{
+    width: 18px;
+    height: 36px;
+}
+
+#carousel-arrow-right img
+{
+    rotate: 180deg;
+}
+
+#enterprise-list
+{
+    min-width: 0;
+    overflow: hidden;
+}
+
+#enterprise-list-scroller
+{
+    gap: 2em;
+    display: flex;
+    position: relative;
+
+    transition: .15s ease-in;
+}
+
+.enterprise
+{
+    gap: 1em;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.enterprise img
+{
+    max-width: 6em;
+    object-fit: contain;
+}
+
+.enterprise h2
+{
+    font: var(--h2);
+    text-align: center;
+
+    color: var(--black);
+}
+
+.enterprise-list-separator
+{
+    border: 1px solid var(--gray2);
+}
+
+#social-proof hr
+{
+    width: 100%;
+
+    background-color: var(--gray2);
+}

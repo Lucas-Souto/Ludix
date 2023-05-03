@@ -1,0 +1,196 @@
+#budget
+{
+    gap: 4em;
+    width: fit-content;
+    display: flex;
+    align-items: flex-end;
+
+    padding: 1em 2em;
+    margin: 8em auto;
+    margin-top: 14em;
+
+    border-radius: 24px;
+    background-color: var(--main-light);
+}
+
+/* Form */
+
+#budget-form
+{
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#budget-form h1
+{
+    font: var(--h1);
+
+    color: var(--black);
+}
+
+.input-group
+{
+    gap: 1em;
+    width: 100%;
+    display: flex;
+}
+
+.input-label
+{
+    gap: .25em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-label label
+{
+    font: var(--p4);
+
+    color: var(--black);
+}
+
+.input-content
+{
+    font: var(--p3);
+
+    padding: .5em;
+
+    color: var(--black);
+    border: 2px solid var(--main);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.input-content::placeholder
+{
+    color: var(--gray2);
+}
+
+.input-content:focus
+{
+    border: 2px solid transparent;
+    outline: 2px solid var(--main-dark);
+}
+
+.check-label
+{
+    gap: .5em;
+    display: flex;
+    align-items: center;
+}
+
+.check-label input
+{
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+
+    border: none;
+    outline: 0;
+    border-radius: 2px;
+    background-color: var(--white);
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.check-label input:checked
+{
+    color: white;
+    background-color: var(--main);
+}
+
+.check-label input:after
+{
+    content: ' ';
+    width: 15%;
+    height: 40%;
+    display: none;
+    position: relative;
+    left: 40%;
+    top: 20%;
+
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(50deg);
+}
+
+.check-label input:checked:after
+{
+    display: block;
+}
+
+.check-label label
+{
+    font: var(--p4);
+
+    color: var(--black);
+}
+
+#calculate-budget
+{
+    cursor: pointer;
+    font: var(--p1);
+    flex-grow: 1;
+    text-align: center;
+
+    padding: .25em 0;
+
+    color: var(--black);
+    border: 2px solid var(--main-dark);
+    border-radius: 8px;
+    background-color: var(--main);
+}
+
+/* Estimativa */
+
+#estimation
+{
+    position: relative;
+}
+
+#estimation-illustration
+{
+    width: 340px;
+    position: relative;
+}
+
+#estimation-illustration img
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#estimation-value
+{
+    font: var(--h2);
+    position: absolute;
+    bottom: 0;
+
+    padding: .25em 2em;
+
+    color: var(--black);
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+#estimation-value::before
+{
+    content: "";
+    width: 36px;
+    height: 18px;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+
+    rotate: 180deg;
+    background-color: inherit;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+}

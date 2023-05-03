@@ -1,0 +1,107 @@
+@import url("base.css");
+@import url("components/hero.css");
+@import url("components/social-proof.css");
+@import url("components/about.css");
+@import url("components/budget.css");
+@import url("components/footer.css");
+
+@media (max-width: 1540px)
+{
+    /* Hero */
+    #hero-image
+    {
+        width: 500px;
+        top: unset;
+        bottom: 5%;
+    }
+
+    /* Sobre */
+    #description-cards
+    {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    /* Hero */
+    #hero-background
+    {
+        min-width: 115%;
+        min-height: unset;
+        top: unset;
+        left: -5em;
+        bottom: 35%;
+
+        rotate: 90deg;
+    }
+
+    header
+    {
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        margin: 0;
+
+        background-color: var(--main-light);
+    }
+
+    nav
+    {
+        display: none;
+    }
+
+    #hero-content
+    {
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 0;
+    }
+
+    #hero-left
+    {
+        max-width: unset;
+
+        margin: 0 var(--margin);
+    }
+
+    #hero-image
+    {
+        position: unset;
+
+        margin-left: auto;
+    }
+
+    /* Sobre */
+    #effect-phrase-deck
+    {
+        gap: 2em;
+    }
+
+    /* Orçamento */
+    #budget
+    {
+        gap: 1.5em;
+        flex-direction: column;
+
+        margin: 4em auto;
+    }
+
+    #estimation
+    {
+        margin: 0 auto;
+    }
+
+    #estimation-illustration
+    {
+        display: none;
+    }
+
+    #estimation-value
+    {
+        position: unset;
+    }
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root
+{
+    --margin: 7.1875em;
+
+    /* Color - Main */
+    --main-light: #F5B723;
+    --main: #F57D36;
+    --main-dark: #F03749;
+
+    /* Color - Other */
+    --white: #F3F3F3;
+    --gray1: #C1C1C1;
+    --gray2: #656565;
+    --gray3: #353535;
+    --semi-black: #1A1A23;
+    --black: black;
+
+    /* Font - Heading */
+    --heading-family: 'M PLUS Rounded 1c', sans-serif;
+    --display: normal 56px var(--heading-family);
+    --h1: normal 48px var(--heading-family);
+    --h2: normal 32px var(--heading-family);
+    --h3: bold 24px var(--heading-family);
+
+    /* Font - Paragraph */
+    --paragraph-family: 'Roboto', sans-serif;
+    --p1: normal 32px var(--paragraph-family);
+    --p2: normal 24px var(--paragraph-family);
+    --p3: normal 16px var(--paragraph-family);
+    --p4: normal 14px var(--paragraph-family);
+}
+
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--white);
+}
+
+.logo
+{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo h1
+{
+    font: var(--display);
+
+    margin: 0;
+
+    color: var(--black);
+}
