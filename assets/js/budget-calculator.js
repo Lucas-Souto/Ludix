@@ -23,9 +23,7 @@ const materialTypeValues =
 
 function calculateBudget()
 {
-    let value = 0;
-    
-    if (includePublish.checked) value += 250 * copies.value;
+    let value = 250 * copies.value;
 
     if (includeArt.checked) value += 10000;
 

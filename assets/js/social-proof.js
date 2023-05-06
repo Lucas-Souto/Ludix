@@ -1,3 +1,4 @@
+const scrollTolerance = 64;
 const scroller = document.getElementById("enterprise-list-scroller");
 const cardWidth = Number(window.getComputedStyle(scroller.getElementsByClassName("enterprise")[0]).getPropertyValue("width").replace("px", ""));
 const scrollWraperWidth = Number(window.getComputedStyle(document.getElementById("enterprise-list")).getPropertyValue("width").replace("px", ""));
@@ -21,6 +22,11 @@ function moveCarousel(dir)
         if (previousLeft == -offset) leftValue = 0;
         else leftValue = -offset;
     }
-
+    else
+    {
+        if (dir == -1 && Math.abs(leftValue) <= scrollTolerance) leftValue = 0;
+        else if (dir == 1 && offset - Math.abs(leftValue) <= scrollTolerance) leftValue = -offset;
+    }
+    
     scroller.style.left = leftValue + "px";
 }
